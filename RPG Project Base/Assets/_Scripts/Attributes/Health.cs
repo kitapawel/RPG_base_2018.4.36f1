@@ -12,7 +12,7 @@ namespace RPG.Resources
 
         bool isDead = false;
 
-        private void Awake()
+        private void Start()
         {
             healthPoints = GetComponent<BaseStats>().GetStat(Stat.Health);
         }

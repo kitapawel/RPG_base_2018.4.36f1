@@ -10,14 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4019941247672974734}
   - component: {fileID: 4019941247672974722}
-  - component: {fileID: 4181746213604579689}
-  - component: {fileID: 4019941247672974725}
   - component: {fileID: 4019941247672974723}
   - component: {fileID: 4019941247672974721}
+  - component: {fileID: 4019941247672974725}
+  - component: {fileID: 4181746213604579689}
   - component: {fileID: 4019941247672974735}
+  - component: {fileID: 5112796645424684849}
   - component: {fileID: 758005441256090863}
   - component: {fileID: 7544457907034351141}
-  - component: {fileID: 5112796645424684849}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -61,33 +61,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &4181746213604579689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4019941247672974724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ea9374b509b70f4bba37e4a2ca8cf00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uniqueIdentifier: 
---- !u!114 &4019941247672974725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4019941247672974724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56da07dd204c8054aad93903037474e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  maxSpeed: 6
 --- !u!95 &4019941247672974723
 Animator:
   serializedVersion: 3
@@ -123,6 +96,33 @@ MonoBehaviour:
   rightHandTransform: {fileID: 0}
   leftHandTransform: {fileID: 0}
   defaultWeapon: {fileID: 0}
+--- !u!114 &4019941247672974725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4019941247672974724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56da07dd204c8054aad93903037474e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  maxSpeed: 6
+--- !u!114 &4181746213604579689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4019941247672974724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea9374b509b70f4bba37e4a2ca8cf00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: 
 --- !u!114 &4019941247672974735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +135,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9d2a18fe1a292642b0301a90adccd7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5112796645424684849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4019941247672974724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4939ef06e2bf8f44792509ae62427cb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingLevel: 1
+  characterClass: 1
+  progression: {fileID: 11400000, guid: 2c27141243534a24d82e40dde4bda24e, type: 2}
 --- !u!114 &758005441256090863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,18 +179,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5112796645424684849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4019941247672974724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4939ef06e2bf8f44792509ae62427cb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingLevel: 1
-  characterClass: 1
-  progression: {fileID: 11400000, guid: 2c27141243534a24d82e40dde4bda24e, type: 2}

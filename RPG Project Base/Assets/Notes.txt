@@ -1,0 +1,1 @@
+Progession prefab - needs to be filled out in a proper fassion (e.g. when you create 3 fields of an array and populate only for 2, then there will be errors).
