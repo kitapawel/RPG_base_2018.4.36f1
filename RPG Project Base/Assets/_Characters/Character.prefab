@@ -150,6 +150,8 @@ MonoBehaviour:
   startingLevel: 1
   characterClass: 1
   progression: {fileID: 11400000, guid: 2c27141243534a24d82e40dde4bda24e, type: 2}
+  levelUpParticleEffect: {fileID: 0}
+  shouldUseModifiers: 1
 --- !u!114 &758005441256090863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 959af3c09ac5faf44bdb7de46b1a4a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 100
+  regenerationPercentage: 70
 --- !u!54 &7544457907034351141
 Rigidbody:
   m_ObjectHideFlags: 0
