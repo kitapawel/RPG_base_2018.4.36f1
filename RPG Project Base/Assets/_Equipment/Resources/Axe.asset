@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Axe
   m_EditorClassIdentifier: 
   animatorOverride: {fileID: 22100000, guid: a526a48f91bfa9a4d8eff2a2d69e4b74, type: 2}
-  equippedPrefab: {fileID: 3181060558958638109, guid: 8c68269eae8f97e4fa8c65f26980b0ef,
+  equippedPrefab: {fileID: 114077640692640704, guid: 8c68269eae8f97e4fa8c65f26980b0ef,
     type: 3}
   weaponDamage: 11
   percentageBonus: 10
