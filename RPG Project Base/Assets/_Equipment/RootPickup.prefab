@@ -58,3 +58,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 11400000, guid: 06c3bd5c9d65bf14fa43f0e5ca8a6fb9, type: 2}
+  respawnTime: 7
