@@ -2,17 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ddd : MonoBehaviour
+namespace RPG.Core
 {
-    // Start is called before the first frame update
-    void Start()
+    public class DestroyAfterEffect : MonoBehaviour
     {
-        
-    }
+        [SerializeField] GameObject targetToDestroy = null;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        void Update()
+        {
+            if (!GetComponent<ParticleSystem>().IsAlive())
+            {
+                if (targetToDestroy != null)
+                {
+                    Destroy(targetToDestroy);
+                }
+                else
+                {
+                    Destroy(gameObject);
+                }
+            }
+        }
     }
 }

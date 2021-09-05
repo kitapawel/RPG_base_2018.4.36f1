@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba06f851e15231649a951bc8a2ebdf66, type: 3}
+  m_Name: DropLibrary
+  m_EditorClassIdentifier: 
+  potentialDrops:
+  - item: {fileID: 11400000, guid: 65314aafc304a2d488495c5d58e6bd0c, type: 2}
+    relativeChance:
+    - 10
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 342f94b38f183f847b8dcff0791a1b53, type: 2}
+    relativeChance:
+    - 5
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 7cfbfe13c8e0777449a753994f56774d, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: e488548539d33f948a71d39ba2aea9ef, type: 2}
+    relativeChance:
+    - 1
+    minNumber: 01000000
+    maxNumber: 01000000
+  dropChancePercentage:
+  - 100
+  minDrops: 0a000000
+  maxDrops: 0a000000
