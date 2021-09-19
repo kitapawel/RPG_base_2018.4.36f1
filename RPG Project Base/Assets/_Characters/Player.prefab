@@ -14,6 +14,20 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &271659695176221675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8507931495049633761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b1e891045b2cb4993494958fec7b03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scatterDistance: 3
+  dropLibrary: {fileID: 0}
 --- !u!114 &715043998129621220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   experiencePoints: 0
---- !u!114 &271659695176221675
+--- !u!114 &7799448577667176553
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,15 +117,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8507931495049633761}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5b1e891045b2cb4993494958fec7b03, type: 3}
+  m_Script: {fileID: 11500000, guid: 7090bd7811477b342b65b41be4787b32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scatterDistance: 3
-  dropLibrary:
-  - {fileID: 11400000, guid: 7cfbfe13c8e0777449a753994f56774d, type: 2}
-  - {fileID: 11400000, guid: 65314aafc304a2d488495c5d58e6bd0c, type: 2}
-  - {fileID: 11400000, guid: 342f94b38f183f847b8dcff0791a1b53, type: 2}
-  numberOfDrops: 3
+  currentDialogue: {fileID: 11400000, guid: 2b66b3d38b96a3a4f83c93cee4187aac, type: 2}
 --- !u!1001 &958542626084521834
 PrefabInstance:
   m_ObjectHideFlags: 0

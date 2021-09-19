@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3835023600650142183
+--- !u!114 &-7974444661412811633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
-  m_Name: 28a4a212-5a76-4bef-bafd-993f288fe04e
+  m_Name: 858889e0-88aa-4b93-b327-232ff7241f9f
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: 
+  isPlayerSpeaking: 0
+  text: Go west, and turn south.
   children: []
   rect:
     serializedVersion: 2
-    x: 774
-    y: 151
+    x: 1014
+    y: 321
     width: 200
     height: 100
---- !u!114 &-3177650910440308595
+--- !u!114 &-4307442386930938775
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31,16 +31,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
-  m_Name: 1507d3a4-e997-41e5-94c2-f2f8eb850077
+  m_Name: 7b8941ee-640e-467a-9d75-ee39d6b44791
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 
+  text: Nice to meet you.Do you need any help.
   children:
-  - 568b0ae0-90bf-4739-a9e4-6e1c688b070e
+  - dbbccdeb-9c69-46e9-ba74-aa8a0c6dcd0d
+  - 37ca902d-83af-4d9d-9f4b-1a4321f1c69b
   rect:
     serializedVersion: 2
-    x: 520
-    y: 263
+    x: 512
+    y: 205
     width: 200
     height: 100
 --- !u!114 &11400000
@@ -53,17 +54,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a948d383a2489774c82e9ed9f36893dd, type: 3}
-  m_Name: New Dialogue
+  m_Name: FirstDialogue
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 4802571032209245494}
-  - {fileID: 8631194558838015994}
-  - {fileID: 2385058700233283087}
-  - {fileID: -3177650910440308595}
-  - {fileID: 6200983328033452241}
-  - {fileID: -3835023600650142183}
+  - {fileID: 5623742990251783717}
+  - {fileID: 1127891703196154850}
+  - {fileID: 5149055644472596733}
+  - {fileID: 8234306019840526050}
+  - {fileID: -4307442386930938775}
+  - {fileID: 6771011312330661221}
+  - {fileID: 3807993477879416646}
+  - {fileID: -7974444661412811633}
   newNodeOffset: {x: 250, y: 0}
---- !u!114 &2385058700233283087
+--- !u!114 &1127891703196154850
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,81 +76,125 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
-  m_Name: 799da65c-6c7e-4947-92bf-1631df567eca
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: 
-  children:
-  - 28a4a212-5a76-4bef-bafd-993f288fe04e
-  rect:
-    serializedVersion: 2
-    x: 524
-    y: 151
-    width: 200
-    height: 100
---- !u!114 &4802571032209245494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
-  m_Name: 2d395a3f-ec9e-47ef-9a76-df3f766625c9
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: 
-  children:
-  - c4842539-230f-4b15-8044-3c341a2b278f
-  rect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
---- !u!114 &6200983328033452241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
-  m_Name: 568b0ae0-90bf-4739-a9e4-6e1c688b070e
+  m_Name: 2354fb93-3590-4b2f-ad7c-1087ca84be5d
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 
+  text: It's none of your business!
+  children:
+  - 917ba56e-0903-4b2f-a967-12ccccd72236
+  rect:
+    serializedVersion: 2
+    x: 257
+    y: 19
+    width: 200
+    height: 100
+--- !u!114 &3807993477879416646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: 37ca902d-83af-4d9d-9f4b-1a4321f1c69b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Actually I do. Please show me the way.
+  children:
+  - 858889e0-88aa-4b93-b327-232ff7241f9f
+  rect:
+    serializedVersion: 2
+    x: 764
+    y: 321
+    width: 200
+    height: 100
+--- !u!114 &5149055644472596733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: ea9729a6-ae09-46e6-b554-5975a27610b6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I am Joe.
+  children:
+  - 7b8941ee-640e-467a-9d75-ee39d6b44791
+  rect:
+    serializedVersion: 2
+    x: 258
+    y: 201
+    width: 200
+    height: 100
+--- !u!114 &5623742990251783717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: c14396f4-601c-4572-aa67-18b8180b8946
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hi, who are you?
+  children:
+  - 2354fb93-3590-4b2f-ad7c-1087ca84be5d
+  - ea9729a6-ae09-46e6-b554-5975a27610b6
+  rect:
+    serializedVersion: 2
+    x: 8
+    y: 12
+    width: 200
+    height: 100
+--- !u!114 &6771011312330661221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: dbbccdeb-9c69-46e9-ba74-aa8a0c6dcd0d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No, I'm good.
+  children:
+  - 917ba56e-0903-4b2f-a967-12ccccd72236
+  rect:
+    serializedVersion: 2
+    x: 763
+    y: 205
+    width: 200
+    height: 100
+--- !u!114 &8234306019840526050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: 917ba56e-0903-4b2f-a967-12ccccd72236
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: As you whish, goodbye!
   children: []
   rect:
     serializedVersion: 2
-    x: 770
-    y: 263
-    width: 200
-    height: 100
---- !u!114 &8631194558838015994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
-  m_Name: c4842539-230f-4b15-8044-3c341a2b278f
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: 
-  children:
-  - 799da65c-6c7e-4947-92bf-1631df567eca
-  - 1507d3a4-e997-41e5-94c2-f2f8eb850077
-  rect:
-    serializedVersion: 2
-    x: 276
-    y: 148
+    x: 507
+    y: 19
     width: 200
     height: 100
