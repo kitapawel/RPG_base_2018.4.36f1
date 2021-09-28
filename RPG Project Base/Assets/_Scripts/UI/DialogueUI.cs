@@ -9,29 +9,61 @@ namespace RPG.UI
 {
     public class DialogueUI : MonoBehaviour
     {
-        [SerializeField]TextMeshProUGUI AIText;
-        [SerializeField] Button nextButton;
         PlayerConversant playerConversant;
-        
+        [SerializeField] TextMeshProUGUI AIText;
+        [SerializeField] Button nextButton;
+        [SerializeField] GameObject AIResponse;
+        [SerializeField] Transform choiceRoot;
+        [SerializeField] GameObject choicePrefab;
+        [SerializeField] Button quitButton;
+        [SerializeField] TextMeshProUGUI conversantName;
+
         // Start is called before the first frame update
         void Start()
         {
             playerConversant = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>();
-            nextButton.onClick.AddListener(Next);
+            playerConversant.onConversationUpdated += UpdateUI;
+            nextButton.onClick.AddListener(() => playerConversant.Next());
+            quitButton.onClick.AddListener(() => playerConversant.Quit());
 
             UpdateUI();
         }
 
-        void Next()
-        {
-            playerConversant.Next();
-            UpdateUI();
-        }
-        // Update is called once per frame
         void UpdateUI()
         {
-            AIText.text = playerConversant.GetText();
-            nextButton.gameObject.SetActive(playerConversant.HasNext());
+            gameObject.SetActive(playerConversant.IsActive());
+            if (!playerConversant.IsActive())
+            {
+                return;
+            }
+            conversantName.text = playerConversant.GetCurrentConversantName();
+            AIResponse.SetActive(!playerConversant.IsChoosing());
+            choiceRoot.gameObject.SetActive(playerConversant.IsChoosing());
+            if (playerConversant.IsChoosing())
+            {
+                BuildChoiceList();
+            }
+            else
+            {
+                AIText.text = playerConversant.GetText();
+                nextButton.gameObject.SetActive(playerConversant.HasNext());
+            }
+        }
+
+        private void BuildChoiceList()
+        {
+            choiceRoot.DetachChildren();
+            foreach (DialogueNode choice in playerConversant.GetChoices())
+            {
+                GameObject choiceInstance = Instantiate(choicePrefab, choiceRoot);
+                var textComp = choiceInstance.GetComponentInChildren<TextMeshProUGUI>();
+                textComp.text = choice.GetText();
+                Button button = choiceInstance.GetComponentInChildren<Button>();
+                button.onClick.AddListener(() =>
+                {
+                    playerConversant.SelectChoice(choice);
+                });
+            }
         }
     }
 }
