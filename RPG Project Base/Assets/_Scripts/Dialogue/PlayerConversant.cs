@@ -93,11 +93,17 @@ namespace RPG.Dialogue
             }
 
             DialogueNode[] children = currentDialogue.GetAIChildren(currentNode).ToArray();
-            int randomIndex = UnityEngine.Random.Range(0, children.Count());
-            TriggerExitAction();
-            currentNode = children[randomIndex];
-            TriggerEnterAction();
-            onConversationUpdated();
+            if (children.Length > 0)
+            {
+                TriggerExitAction();
+                currentNode = children[UnityEngine.Random.Range(0, children.Count())];
+                TriggerEnterAction();
+                onConversationUpdated();
+            }
+            else
+            {
+                Quit();
+            }
         }
 
         public bool HasNext()

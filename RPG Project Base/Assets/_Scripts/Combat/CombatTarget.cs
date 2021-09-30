@@ -7,6 +7,8 @@ namespace RPG.Combat
     [RequireComponent(typeof(Health))]
     public class CombatTarget : MonoBehaviour, IRaycastable
     {
+        [Header("Always put CombatTarget above AIConversant - raycasting priorities")]
+        [SerializeField] string important = "Important";
         public CursorType GetCursorType()
         {
             return CursorType.Combat;
