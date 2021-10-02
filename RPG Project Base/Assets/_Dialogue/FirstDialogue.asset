@@ -23,6 +23,29 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: UpdatedInstructions
+--- !u!114 &-5239969746882112229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: da746449-8128-4f79-9713-e860ba076997
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Complete potion quest step...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 245
+    y: 408
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: TestObjective
 --- !u!114 &-4307442386930938775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,6 +93,7 @@ MonoBehaviour:
   - {fileID: 3807993477879416646}
   - {fileID: -7974444661412811633}
   - {fileID: 5694473936097736755}
+  - {fileID: -5239969746882112229}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &1127891703196154850
 MonoBehaviour:
@@ -89,8 +113,8 @@ MonoBehaviour:
   - 917ba56e-0903-4b2f-a967-12ccccd72236
   rect:
     serializedVersion: 2
-    x: 257
-    y: 19
+    x: 246
+    y: 4
     width: 200
     height: 100
   onEnterAction: 
@@ -137,8 +161,8 @@ MonoBehaviour:
   - 7b8941ee-640e-467a-9d75-ee39d6b44791
   rect:
     serializedVersion: 2
-    x: 258
-    y: 201
+    x: 248
+    y: 157
     width: 200
     height: 100
   onEnterAction: 
@@ -161,6 +185,7 @@ MonoBehaviour:
   - 2354fb93-3590-4b2f-ad7c-1087ca84be5d
   - ea9729a6-ae09-46e6-b554-5975a27610b6
   - a0824103-de1f-4b4e-861d-ccdf7ba453cf
+  - da746449-8128-4f79-9713-e860ba076997
   rect:
     serializedVersion: 2
     x: 8
@@ -186,8 +211,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 291
-    y: 381
+    x: 245
+    y: 311
     width: 200
     height: 100
   onEnterAction: 

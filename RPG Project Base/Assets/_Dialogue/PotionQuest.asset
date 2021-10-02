@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8793722431565614104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: 49601cd7-1f57-46dd-b078-b6b928c54ed9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 721
+    y: 135
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &-8659358930627335085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: b1390b46-7d63-43f9-a881-7500c4b3e824
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Yes!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 714
+    y: 266
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: GiveQuest
+--- !u!114 &-1859936176620604070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: 0e21453b-e96f-4562-b803-6dc52f6ff255
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No way!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 239
+    y: 24
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a948d383a2489774c82e9ed9f36893dd, type: 3}
+  m_Name: PotionQuest
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 3179499683966610623}
+  - {fileID: 3558262434763617530}
+  - {fileID: -1859936176620604070}
+  - {fileID: 2919756682219194695}
+  - {fileID: -8793722431565614104}
+  - {fileID: -8659358930627335085}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &2919756682219194695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: b8ca6623-f8a4-4c10-a282-6fddef0fa19e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I need a potion made!
+  children:
+  - 49601cd7-1f57-46dd-b078-b6b928c54ed9
+  - b1390b46-7d63-43f9-a881-7500c4b3e824
+  rect:
+    serializedVersion: 2
+    x: 491
+    y: 200
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &3179499683966610623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: fe007b03-1403-4bd4-a87c-ec7dd2af3569
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hello traveler, would you consider helping me?
+  children:
+  - 197430ba-ce24-4d97-b0c2-e4fa80718e22
+  - 0e21453b-e96f-4562-b803-6dc52f6ff255
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &3558262434763617530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: 197430ba-ce24-4d97-b0c2-e4fa80718e22
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What is the matter?
+  children:
+  - b8ca6623-f8a4-4c10-a282-6fddef0fa19e
+  rect:
+    serializedVersion: 2
+    x: 248
+    y: 199
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
