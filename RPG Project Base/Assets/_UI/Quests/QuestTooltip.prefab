@@ -360,6 +360,7 @@ MonoBehaviour:
     type: 3}
   objectiveIncompletePrefab: {fileID: 5239740752704574179, guid: 3965eccb1464d4d419d41fcb451a2d48,
     type: 3}
+  rewardText: {fileID: 762982864861809932}
 --- !u!1 &5735134677671365016
 GameObject:
   m_ObjectHideFlags: 0
