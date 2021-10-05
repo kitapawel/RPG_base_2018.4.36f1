@@ -23,6 +23,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: UpdatedInstructions
+  condition:
+    and: []
 --- !u!114 &-5239969746882112229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37,15 +39,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: Complete potion quest step...
-  children: []
+  children:
+  - 593e3256-5c79-4db3-a91c-64aa854a07d3
   rect:
     serializedVersion: 2
-    x: 245
-    y: 408
+    x: 252
+    y: 458
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: TestObjective
+  condition:
+    and:
+    - or:
+      - predicate: 
+        parameters: []
+        negate: 0
 --- !u!114 &-4307442386930938775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,6 +80,58 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-3531571678703877213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: 89b274c7-369f-41c3-b830-384d6b20f421
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Charge!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 499
+    y: 338
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-3053916470552903927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: 593e3256-5c79-4db3-a91c-64aa854a07d3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thanks.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 494
+    y: 458
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,6 +155,8 @@ MonoBehaviour:
   - {fileID: -7974444661412811633}
   - {fileID: 5694473936097736755}
   - {fileID: -5239969746882112229}
+  - {fileID: -3053916470552903927}
+  - {fileID: -3531571678703877213}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &1127891703196154850
 MonoBehaviour:
@@ -119,6 +182,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
 --- !u!114 &3807993477879416646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,6 +208,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
 --- !u!114 &5149055644472596733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,6 +234,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
 --- !u!114 &5623742990251783717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +263,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: TestEnter
   onExitAction: 
+  condition:
+    and: []
 --- !u!114 &5694473936097736755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,15 +279,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: Fuck you!
-  children: []
+  children:
+  - 89b274c7-369f-41c3-b830-384d6b20f421
   rect:
     serializedVersion: 2
-    x: 245
-    y: 311
+    x: 251
+    y: 329
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: Attack
+  condition:
+    and: []
 --- !u!114 &6771011312330661221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +315,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
 --- !u!114 &8234306019840526050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,3 +340,5 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: TestExit
+  condition:
+    and: []

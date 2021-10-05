@@ -14,15 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: No!
-  children: []
+  children:
+  - 46586835-227b-4e1d-a82c-786602375da7
   rect:
     serializedVersion: 2
-    x: 721
-    y: 135
+    x: 719
+    y: 161
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
 --- !u!114 &-8659358930627335085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37,7 +40,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: Yes!
-  children: []
+  children:
+  - 83a29798-d9d9-43fc-8967-6a39fc4feff6
   rect:
     serializedVersion: 2
     x: 714
@@ -46,6 +50,94 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: GiveQuest
+  condition:
+    and: []
+--- !u!114 &-7819509649590084208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: e9e33201-d185-459d-b6a9-40590e16e909
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm already on it!
+  children:
+  - 9d130132-ef02-4667-954b-9585d1768d7d
+  rect:
+    serializedVersion: 2
+    x: 262
+    y: 346
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Make a potion
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Make a potion
+        negate: 1
+--- !u!114 &-7449713598290425725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: 83a29798-d9d9-43fc-8967-6a39fc4feff6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you so much!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 964
+    y: 266
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-2566938546961119215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: 9d130132-ef02-4667-954b-9585d1768d7d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oh, right...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 502
+    y: 348
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &-1859936176620604070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,15 +152,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: No way!
-  children: []
+  children:
+  - 46586835-227b-4e1d-a82c-786602375da7
   rect:
     serializedVersion: 2
-    x: 239
-    y: 24
+    x: 265
+    y: 46
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,7 +183,38 @@ MonoBehaviour:
   - {fileID: 2919756682219194695}
   - {fileID: -8793722431565614104}
   - {fileID: -8659358930627335085}
+  - {fileID: -7819509649590084208}
+  - {fileID: -2566938546961119215}
+  - {fileID: 5899423778060860609}
+  - {fileID: 3285193702581682755}
+  - {fileID: 2865422000409494965}
+  - {fileID: -7449713598290425725}
   newNodeOffset: {x: 250, y: 0}
+--- !u!114 &2865422000409494965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: 46586835-227b-4e1d-a82c-786602375da7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Sorry to hear that:(
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 986
+    y: 46
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &2919756682219194695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,6 +240,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
 --- !u!114 &3179499683966610623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +259,8 @@ MonoBehaviour:
   children:
   - 197430ba-ce24-4d97-b0c2-e4fa80718e22
   - 0e21453b-e96f-4562-b803-6dc52f6ff255
+  - e9e33201-d185-459d-b6a9-40590e16e909
+  - d250547f-49cb-4be6-b21f-a14ae55e03b2
   rect:
     serializedVersion: 2
     x: 0
@@ -139,6 +269,33 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
+--- !u!114 &3285193702581682755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: 2f04231f-c784-4aec-955a-84cf9a6f6a89
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you so much!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 491
+    y: 468
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &3558262434763617530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,14 +309,61 @@ MonoBehaviour:
   m_Name: 197430ba-ce24-4d97-b0c2-e4fa80718e22
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: What is the matter?
+  text: Sure, how?
   children:
   - b8ca6623-f8a4-4c10-a282-6fddef0fa19e
   rect:
     serializedVersion: 2
-    x: 248
+    x: 260
     y: 199
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Make a potion
+        negate: 1
+--- !u!114 &5899423778060860609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679415b4f9b4ced498373cf484f5188f, type: 3}
+  m_Name: d250547f-49cb-4be6-b21f-a14ae55e03b2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I have the potion!
+  children:
+  - 2f04231f-c784-4aec-955a-84cf9a6f6a89
+  rect:
+    serializedVersion: 2
+    x: 255
+    y: 468
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Make a potion
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Make a potion
+        negate: 0
+      - predicate: HasInventoryItem
+        parameters:
+        - 51544e6d-3c9c-4aa7-8d59-a6615ecd0933
+        negate: 0

@@ -15,10 +15,6 @@ MonoBehaviour:
   objectives:
   - reference: 0
     description: Step 1
-  - reference: 1
-    description: Step 2
-  - reference: 2
-    description: Step 3
   rewards:
   - number: 1
     item: {fileID: 11400000, guid: e488548539d33f948a71d39ba2aea9ef, type: 2}

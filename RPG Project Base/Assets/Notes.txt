@@ -1,1 +1,77 @@
 Progession prefab - needs to be filled out in a proper fassion (e.g. when you create 3 fields of an array and populate only for 2, then there will be errors).
+
+DialogueTrigger:
+        // The purpose of this script is to allow user to add an action to any gameObject
+        // (currently a string that can be used to MATCH the dialogue Nodes (onEnterAction or onExitAction) events
+        // I plan on changing this to an enum)
+        // this allows the designer(user) to choose from Unity drop down of
+        // functions to call based on gameObject dragged into it (that unity event from Inspector) 
+        // (can also be this object -- meaning the one this script is on)
+        //
+        // In our class we added it(this script) to Enemy 6 in inspector
+        // In our dialogue I added Attack to the onEnterAction of the last node (of the wrong path made guard angry)
+        // On Enemy 6 Hit plus sign drug Enemies Parent into Game Object (it has a Aggro Group script 
+        // to activate all enemies attack again)
+        // Hit plus to add another event
+        // drug Player into game object slot
+        // choose PlayerConversant.Quit to close the dialogue
+
+AggroGroup:
+        // This is used for characters of fighter type
+        // The purpose of this script is to allow user to make Fighters(passive or agressive)
+        // Seems an empty Parent(of Fighters) should hold this script
+        // Does NOT have to be ALL fighters in scene
+        // With this you can pick and choose
+        // In the inspector within your parent Enemies gameObject you could have other
+        // parents of fighters!
+		
+QuestGiver:
+        // The purpose of this script is to allow gameObject to give a Quest to Player
+        // note: -- Use a QuestCompletion Component(can be on differant gameObject right?) to complete this quest to get rewards
+        // Simply drag the Quest into the component
+        // We put this on Enemy 8 during class
+        // Then choose a Dialogue to trigger this action (from Dialogue NOT Quest)
+        // Rig up the nodes onEnterAction or onExitAction fields
+        // We chose the last one at that time Player Response was (Sure, how?) on its onExitAction
+        // it will trigger the GiveQuest Procedure
+        // note: GiveQuest must match both the DialogueTrigger Component Action and this objective action
+        // Again Note to self: TODO change to ENUM! for action items
+
+QuestCompletion:
+        // The purpose of this script is to allow user to set up a gameObject
+        // that works with the QuestGiver
+        // put a Dialogue Trigger on that object
+        // Match the Action to the Quest objective to be completed onEnterAction or onExitAction
+        // Put QuestCompletion it on same gameObject and Point to correct Quest
+        // Enter that matching Objective Referance
+
+Dialogue Editor:
+        //Always end conversations with AI responses, otherwise IndexOutOfBounds may appear and bugs
+        //TODO: maybe fix this...
+		
+I am hoping to get my designer a list of things to do in Unity Only using this system.
+
+The How to tie the dialogue system (dialogueNodes) to this system with Quest objectives...
+------------------
+How to give a quest:
+	1.  Pick a character to give the quest
+	2.	Put a QuestGiver script on that character
+	3.	Drag in the quest to give for 'Quest'
+	4.	NOTE: the references for each objective (You need them to complete an Objective)
+	5.	Put a Dialogue Trigger script on that character
+	6.	Enter the Action (Must match the method name exactly)
+	7.	Hit the plus sign to add an Event (unity event)
+	8.	Drag the character gameOject into that component
+	9.	Choose QuestGiver.GiveQuest from the drop down
+	10.	This character should give the quest now!
+	
+How to complete an objective:
+	1.	Pick a character to complete the objective
+	2.	Put a QuestCompletion script on that player
+	3.	Quest field: Choose the correct Quest (to complete this objective)
+	4.	Objective field: Type in the exact string for the Objective that should be marked as complete
+	5.	Put a Dialogue Trigger script on that character 
+	6.	Action field: Type in the exact Action string used in that characters dialogue(node) being used
+	7.	Drag the character gameOject into that component
+	8.	Choose QuestCompletion.CompleteObjective from the srop down
+	9.	This character should complete that obejective.
