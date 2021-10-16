@@ -77,11 +77,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6aefdc83f84fe41873f67658a13b74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statuses:
-  - quest: {fileID: 11400000, guid: ea217e3f33882a440b0f582a42f1f675, type: 2}
-    completedObjectives: []
-  - quest: {fileID: 11400000, guid: cf534b180a01bfa41b11b46799cac71c, type: 2}
-    completedObjectives: []
 --- !u!114 &5920799579963219021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,6 +108,9 @@ MonoBehaviour:
   - type: 6
     texture: {fileID: 2800000, guid: 96d4bfdb0d6d8c042bf8fccf6524d239, type: 3}
     hotspot: {x: 0, y: 0}
+  - type: 7
+    texture: {fileID: 2800000, guid: f8c873f1e53e83f4aabf342d6be1dfc3, type: 3}
+    hotspot: {x: 0, y: 0}
   maxNavMeshProjectionDistance: 1
   raycastRadius: 1
 --- !u!114 &6823277390685381449
@@ -141,6 +139,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: Player
+--- !u!114 &3397435360671804156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8507931495049633761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b4fef545713d64b8be2723ccf1ba78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &958542626084521834
 PrefabInstance:
   m_ObjectHideFlags: 0
