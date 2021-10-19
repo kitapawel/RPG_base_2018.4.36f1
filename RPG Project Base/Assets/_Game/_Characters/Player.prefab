@@ -53,6 +53,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventorySize: 6
+--- !u!114 &3397435360671804156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8507931495049633761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b4fef545713d64b8be2723ccf1ba78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4733297195054067603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: Player
---- !u!114 &3397435360671804156
+--- !u!114 &151152209864027681
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,9 +160,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8507931495049633761}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38b4fef545713d64b8be2723ccf1ba78, type: 3}
+  m_Script: {fileID: 11500000, guid: ae4b8b9224ff9ef4a9df809952de0291, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingBalance: 100
 --- !u!1001 &958542626084521834
 PrefabInstance:
   m_ObjectHideFlags: 0
