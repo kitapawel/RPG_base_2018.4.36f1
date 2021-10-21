@@ -315,15 +315,23 @@ MonoBehaviour:
   - item: {fileID: 11400000, guid: 65314aafc304a2d488495c5d58e6bd0c, type: 2}
     initialStock: 5
     buyingDiscountPercentage: 0
+    levelToUnlock: 0
   - item: {fileID: 11400000, guid: 342f94b38f183f847b8dcff0791a1b53, type: 2}
     initialStock: 3
     buyingDiscountPercentage: 0
+    levelToUnlock: 0
   - item: {fileID: 11400000, guid: 7cfbfe13c8e0777449a753994f56774d, type: 2}
     initialStock: 1
     buyingDiscountPercentage: 0
+    levelToUnlock: 3
   - item: {fileID: 11400000, guid: d9a3b5a76b7444a42a39037c38e489eb, type: 2}
     initialStock: 5
     buyingDiscountPercentage: 0
+    levelToUnlock: 1
+  - item: {fileID: 11400000, guid: d9a3b5a76b7444a42a39037c38e489eb, type: 2}
+    initialStock: 3
+    buyingDiscountPercentage: 92.3
+    levelToUnlock: 2
 --- !u!54 &418114977
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -353,6 +361,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.2363939, y: 2.0773742, z: 2.7319384}
   m_Center: {x: 0.00000047683716, y: 1.0386871, z: 0}
+--- !u!114 &418114982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418114975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea9374b509b70f4bba37e4a2ca8cf00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: b6780d0e-d803-4969-ae7c-4e2f2d56e3a4
 --- !u!1 &495662749
 GameObject:
   m_ObjectHideFlags: 0
@@ -4890,7 +4911,7 @@ PrefabInstance:
     - target: {fileID: 6460802775734332875, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.00000041574
       objectReference: {fileID: 0}
     - target: {fileID: 6535410633223445326, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
@@ -4900,7 +4921,7 @@ PrefabInstance:
     - target: {fileID: 6535410633223445326, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000030517578
+      value: 0.000030489387
       objectReference: {fileID: 0}
     - target: {fileID: 6536460191784355643, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
@@ -6130,7 +6151,7 @@ PrefabInstance:
     - target: {fileID: 8986451085262998029, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -485.64935
+      value: -567.5739
       objectReference: {fileID: 0}
     - target: {fileID: 8986451085262998029, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
