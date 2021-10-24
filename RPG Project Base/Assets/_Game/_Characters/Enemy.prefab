@@ -40,6 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22c111db2648b0e4f944bc5e8b35e814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  important: Important
 --- !u!114 &7683357596517726597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,6 +308,11 @@ PrefabInstance:
     - target: {fileID: 4019941247672974724, guid: 87b596cf542f7394987010c17fdfabcc,
         type: 3}
       propertyPath: m_Name
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019941247672974724, guid: 87b596cf542f7394987010c17fdfabcc,
+        type: 3}
+      propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4019941247672974734, guid: 87b596cf542f7394987010c17fdfabcc,

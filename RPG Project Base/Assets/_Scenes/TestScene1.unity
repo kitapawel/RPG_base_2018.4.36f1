@@ -332,6 +332,10 @@ MonoBehaviour:
     initialStock: 3
     buyingDiscountPercentage: 92.3
     levelToUnlock: 2
+  - item: {fileID: 11400000, guid: be10cdca51256fb48bbd8661fa829eba, type: 2}
+    initialStock: 1
+    buyingDiscountPercentage: 0
+    levelToUnlock: 2
 --- !u!54 &418114977
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -791,7 +795,7 @@ GameObject:
   - component: {fileID: 1017355050}
   - component: {fileID: 1017355049}
   - component: {fileID: 1017355048}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TestScene1Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4911,7 +4915,7 @@ PrefabInstance:
     - target: {fileID: 6460802775734332875, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00000041574
+      value: -0.0009422099
       objectReference: {fileID: 0}
     - target: {fileID: 6535410633223445326, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
@@ -4921,7 +4925,7 @@ PrefabInstance:
     - target: {fileID: 6535410633223445326, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000030489387
+      value: -0.0005834999
       objectReference: {fileID: 0}
     - target: {fileID: 6536460191784355643, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
@@ -6151,7 +6155,7 @@ PrefabInstance:
     - target: {fileID: 8986451085262998029, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -567.5739
+      value: -570.75
       objectReference: {fileID: 0}
     - target: {fileID: 8986451085262998029, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}

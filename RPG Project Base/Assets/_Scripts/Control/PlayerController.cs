@@ -5,12 +5,14 @@ using RPG.Attributes;
 using System;
 using UnityEngine.EventSystems;
 using UnityEngine.AI;
+using RPG.Inventories;
 
 namespace RPG.Control
 {
     public class PlayerController : MonoBehaviour
     {
         Health health;
+        ActionStore actionStore;
 
         [System.Serializable]
         struct CursorMapping
@@ -23,12 +25,14 @@ namespace RPG.Control
         [SerializeField] CursorMapping[] cursorMappings = null;
         [SerializeField] float maxNavMeshProjectionDistance = 1f;
         [SerializeField] float raycastRadius = 1f;
+        [SerializeField] int numberOfAbilities = 6;
 
         bool isDraggingUI = false;
 
         private void Awake()
         {
             health = GetComponent<Health>();
+            actionStore = GetComponent<ActionStore>();
         }
 
         private void Update()
@@ -40,6 +44,8 @@ namespace RPG.Control
                 return;
             }
 
+            UseAbilities();
+
             if (InteractWithComponent()) return;
             if (InteractWithMovement()) return;
 
@@ -48,7 +54,7 @@ namespace RPG.Control
 
         private bool InteractWithUI()
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonUp(0))
             {
                 isDraggingUI = false;
             }
@@ -66,6 +72,17 @@ namespace RPG.Control
                 return true;
             }
             return false;
+        }
+
+        private void UseAbilities()
+        {
+            for (int i = 0; i < numberOfAbilities; i++)
+            {
+                if (Input.GetKeyDown(KeyCode.Alpha1 + i))
+                {
+                    actionStore.Use(i, gameObject);
+                }
+            }
         }
 
         private bool InteractWithComponent()
@@ -152,7 +169,7 @@ namespace RPG.Control
             return cursorMappings[0];
         }
 
-        private static Ray GetMouseRay()
+        public static Ray GetMouseRay()
         {
             return Camera.main.ScreenPointToRay(Input.mousePosition);
         }
