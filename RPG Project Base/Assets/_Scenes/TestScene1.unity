@@ -335,7 +335,7 @@ MonoBehaviour:
   - item: {fileID: 11400000, guid: be10cdca51256fb48bbd8661fa829eba, type: 2}
     initialStock: 1
     buyingDiscountPercentage: 0
-    levelToUnlock: 2
+    levelToUnlock: 1
 --- !u!54 &418114977
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4915,7 +4915,7 @@ PrefabInstance:
     - target: {fileID: 6460802775734332875, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0009422099
+      value: 0.0007406281
       objectReference: {fileID: 0}
     - target: {fileID: 6535410633223445326, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
@@ -4925,7 +4925,7 @@ PrefabInstance:
     - target: {fileID: 6535410633223445326, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0005834999
+      value: 0.000013009034
       objectReference: {fileID: 0}
     - target: {fileID: 6536460191784355643, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
@@ -6155,7 +6155,7 @@ PrefabInstance:
     - target: {fileID: 8986451085262998029, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -570.75
+      value: -471.67554
       objectReference: {fileID: 0}
     - target: {fileID: 8986451085262998029, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}

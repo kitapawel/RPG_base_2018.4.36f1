@@ -14,6 +14,19 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &151152209864027681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8507931495049633761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae4b8b9224ff9ef4a9df809952de0291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingBalance: 100
 --- !u!114 &271659695176221675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +138,7 @@ MonoBehaviour:
     hotspot: {x: 0, y: 0}
   maxNavMeshProjectionDistance: 1
   raycastRadius: 1
+  numberOfAbilities: 6
 --- !u!114 &6823277390685381449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: Player
---- !u!114 &151152209864027681
+--- !u!114 &1107894682105723783
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,10 +174,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8507931495049633761}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae4b8b9224ff9ef4a9df809952de0291, type: 3}
+  m_Script: {fileID: 11500000, guid: 9008b2fb2795b7a4a9b7a96c2274c5c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingBalance: 100
 --- !u!1001 &958542626084521834
 PrefabInstance:
   m_ObjectHideFlags: 0
