@@ -23,7 +23,7 @@ namespace RPG.Abilities.Effects
                     }
                     else
                     {
-                        //health.Heal(healthChange);
+                        health.Heal(healthChange);
                     }
                 }
             }

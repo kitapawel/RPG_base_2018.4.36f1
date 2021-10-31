@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf8427440c8425b4da297995e1adb05f, type: 3}
+  m_Name: FireSpray
+  m_EditorClassIdentifier: 
+  itemID: 13261eba-7905-4716-ad53-f9370a9b3086
+  displayName: FireSpray
+  description: 'Sprays fire at enemies.
+
+'
+  icon: {fileID: 21300000, guid: a75c68d8f8b30c24788e1ae1ea050ac4, type: 3}
+  pickup: {fileID: 0}
+  stackable: 0
+  price: 25
+  category: 5
+  consumable: 0
+  targetingStrategy: {fileID: 11400000, guid: 0e4df287ff40c4a47a1d59b9fb20bf3e, type: 2}
+  filterStrategies:
+  - {fileID: 11400000, guid: 0ca734d4687e16d4780717b70d4b4966, type: 2}
+  effectStrategies:
+  - {fileID: 11400000, guid: a10c6c2dcd0eb69419f69827793eea6b, type: 2}
+  - {fileID: 11400000, guid: 9add8d16b84baf6499be0e5693042010, type: 2}
+  cooldownTime: 1
+  manaCost: 3
