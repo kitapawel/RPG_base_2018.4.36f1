@@ -391,6 +391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shopName: Strange Shop
   sellingPercentage: 80
+  maximumBarterDiscount: 80
   stockConfig:
   - item: {fileID: 11400000, guid: 65314aafc304a2d488495c5d58e6bd0c, type: 2}
     initialStock: 5
@@ -1099,6 +1100,11 @@ PrefabInstance:
         type: 3}
       propertyPath: destination
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7105041171875889550, guid: 94808db3bf2dc3448af7cccf6fe1153e,
+        type: 3}
+      propertyPath: sceneToLoad
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7105041171875889551, guid: 94808db3bf2dc3448af7cccf6fe1153e,
         type: 3}
@@ -5572,7 +5578,7 @@ PrefabInstance:
     - target: {fileID: 6460802775734332875, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00009631523
+      value: -0.00020700201
       objectReference: {fileID: 0}
     - target: {fileID: 6535410633223445326, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
@@ -5582,7 +5588,7 @@ PrefabInstance:
     - target: {fileID: 6535410633223445326, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00010231998
+      value: 0.0000129040745
       objectReference: {fileID: 0}
     - target: {fileID: 6536460191784355643, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
@@ -7057,7 +7063,7 @@ PrefabInstance:
     - target: {fileID: 8986451085262998029, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -482.5099
+      value: -492.00186
       objectReference: {fileID: 0}
     - target: {fileID: 8986451085262998029, guid: 312fb4b9b51a30440b1999815602adf0,
         type: 3}
@@ -7539,6 +7545,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7105041171875889550, guid: 94808db3bf2dc3448af7cccf6fe1153e,
+        type: 3}
+      propertyPath: sceneToLoad
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7105041171875889551, guid: 94808db3bf2dc3448af7cccf6fe1153e,
         type: 3}
