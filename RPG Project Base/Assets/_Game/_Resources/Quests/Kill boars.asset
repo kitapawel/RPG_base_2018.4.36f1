@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Kill boars
   m_EditorClassIdentifier: 
   objectives:
-  - Kill 2 boars.
+  - reference: 
+    description: 
+  rewards: []

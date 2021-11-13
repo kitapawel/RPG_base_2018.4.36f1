@@ -9,6 +9,7 @@
         Mana,
         ManaRegenRate,
         TotalTraitPoints,
-        BuyingDiscountPercentage
+        BuyingDiscountPercentage,
+        Defence
     }
 }

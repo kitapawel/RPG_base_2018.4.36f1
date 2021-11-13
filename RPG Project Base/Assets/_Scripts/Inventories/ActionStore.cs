@@ -15,7 +15,7 @@ namespace RPG.Inventories
     {
         // STATE
         Dictionary<int, DockedItemSlot> dockedItems = new Dictionary<int, DockedItemSlot>();
-        private class DockedItemSlot 
+        private class DockedItemSlot
         {
             public ActionItem item;
             public int number;
@@ -65,7 +65,7 @@ namespace RPG.Inventories
         public void AddAction(InventoryItem item, int index, int number)
         {
             if (dockedItems.ContainsKey(index))
-            {  
+            {
                 if (object.ReferenceEquals(item, dockedItems[index].item))
                 {
                     dockedItems[index].number += number;
@@ -94,8 +94,8 @@ namespace RPG.Inventories
         {
             if (dockedItems.ContainsKey(index))
             {
-                dockedItems[index].item.Use(user);
-                if (dockedItems[index].item.isConsumable())
+                bool wasUsed = dockedItems[index].item.Use(user);
+                if (wasUsed && dockedItems[index].item.isConsumable())
                 {
                     RemoveItems(index, 1);
                 }
@@ -121,7 +121,7 @@ namespace RPG.Inventories
                     storeUpdated();
                 }
             }
-            
+
         }
 
         /// <summary>

@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using RPG.Saving;
-using RPG.Core;
+using RPG.Utils;
 using System.Collections.Generic;
 
 namespace RPG.Inventories
@@ -99,6 +99,12 @@ namespace RPG.Inventories
         /// <returns>Whether or not the item could be added.</returns>
         public bool AddToFirstEmptySlot(InventoryItem item, int number)
         {
+            foreach (var store in GetComponents<IItemStore>())
+            {
+                number -= store.AddItems(item, number);
+            }
+            if (number <= 0) return true;
+
             int i = FindSlot(item);
 
             if (i < 0)

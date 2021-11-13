@@ -61337,36 +61337,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2498856587589892609, guid: dd71658d174a8ef4a8e305e3929e5324,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2498856587589892609, guid: dd71658d174a8ef4a8e305e3929e5324,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2498856587589892609, guid: dd71658d174a8ef4a8e305e3929e5324,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2498856587589892609, guid: dd71658d174a8ef4a8e305e3929e5324,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2498856587589892609, guid: dd71658d174a8ef4a8e305e3929e5324,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2498856587589892609, guid: dd71658d174a8ef4a8e305e3929e5324,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3687720765967091435, guid: dd71658d174a8ef4a8e305e3929e5324,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -61490,6 +61460,11 @@ PrefabInstance:
     - target: {fileID: 6313157875152131392, guid: dd71658d174a8ef4a8e305e3929e5324,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6313157875152131392, guid: dd71658d174a8ef4a8e305e3929e5324,
+        type: 3}
+      propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6622623912854764993, guid: dd71658d174a8ef4a8e305e3929e5324,
@@ -61627,36 +61602,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7022026463288070156, guid: dd71658d174a8ef4a8e305e3929e5324,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7022026463288070156, guid: dd71658d174a8ef4a8e305e3929e5324,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7022026463288070156, guid: dd71658d174a8ef4a8e305e3929e5324,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7022026463288070156, guid: dd71658d174a8ef4a8e305e3929e5324,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7022026463288070156, guid: dd71658d174a8ef4a8e305e3929e5324,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7022026463288070156, guid: dd71658d174a8ef4a8e305e3929e5324,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8651496046014349008, guid: dd71658d174a8ef4a8e305e3929e5324,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -61691,6 +61636,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023823728558941481, guid: dd71658d174a8ef4a8e305e3929e5324,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00020072212
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd71658d174a8ef4a8e305e3929e5324, type: 3}
@@ -61831,6 +61781,7 @@ MonoBehaviour:
   rightHandTransform: {fileID: 476484606}
   leftHandTransform: {fileID: 1432728183}
   defaultWeapon: {fileID: 11400000, guid: 06c3bd5c9d65bf14fa43f0e5ca8a6fb9, type: 2}
+  autoAttackRange: 4
 --- !u!95 &8507931495917577014
 Animator:
   serializedVersion: 3

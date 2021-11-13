@@ -1641,6 +1641,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6440597701153982527, guid: af3c1f9a8e13a6241b00aef4c3d3627c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00003099599
+      objectReference: {fileID: 0}
     - target: {fileID: 6650373481565623238, guid: af3c1f9a8e13a6241b00aef4c3d3627c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2388,10 +2393,45 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 883942061520344979}
     m_Modifications:
+    - target: {fileID: 464250645542185761, guid: fc367d5fbf5974f4c9cc968730dd0f7f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 464250645542185761, guid: fc367d5fbf5974f4c9cc968730dd0f7f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4327424131961956483}
+    - target: {fileID: 464250645542185761, guid: fc367d5fbf5974f4c9cc968730dd0f7f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RPG.UI.MainMenuUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 464250645542185761, guid: fc367d5fbf5974f4c9cc968730dd0f7f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 464250645542185761, guid: fc367d5fbf5974f4c9cc968730dd0f7f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 464250645542185761, guid: fc367d5fbf5974f4c9cc968730dd0f7f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 464250645542185761, guid: fc367d5fbf5974f4c9cc968730dd0f7f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1561825691895274510, guid: fc367d5fbf5974f4c9cc968730dd0f7f,
         type: 3}
       propertyPath: m_Name
-      value: Button (3)
+      value: Quit Button
       objectReference: {fileID: 0}
     - target: {fileID: 1910422694170387179, guid: fc367d5fbf5974f4c9cc968730dd0f7f,
         type: 3}
@@ -2522,6 +2562,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7141530355583144543, guid: fc367d5fbf5974f4c9cc968730dd0f7f,
+        type: 3}
+      propertyPath: m_text
+      value: Quit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc367d5fbf5974f4c9cc968730dd0f7f, type: 3}
